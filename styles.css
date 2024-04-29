@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+/* variables */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+  background-color: var(--yellow);
+  font-family: "Figtree", sans-serif;
+  color: var(--black);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid;
+  border-radius: 15px;
+  background-color: var(--white);
+  width: 420px;
+  padding: 25px;
+  box-shadow: 10px 10px;
+}
+
+.card-image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.learning-inner {
+  font-weight: 800;
+  padding: 5px 10px;
+  background-color: var(--yellow);
+  border-radius: 5px;
+}
+
+.learning {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.card-title {
+  white-space: nowrap;
+  margin-bottom: 0;
+  font-weight: 800;
+}
+
+.card-info {
+  margin-top: 10px;
+}
+
+.card-title-link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.card-title-link:hover {
+  color: var(--yellow);
+}
+
+.card-paragraph {
+  color: var(--grey);
+  line-height: 1.5;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+}
+
+.author-name {
+  padding-left: 15px;
+  font-weight: 800;
+}
+
+.author-pic {
+  width: 40px;
+}
+
+.author-pic-inner {
+  max-width: 100%;
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 82%;
+  }
+  .card-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 350px) {
+  .card-title {
+    font-size: 20px;
+  }
+}
